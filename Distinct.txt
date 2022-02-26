@@ -1,0 +1,24 @@
+ALGORITHM Distinct_element
+
+Var
+  arr1:ARRAY_OF INTEGER[];
+  arr2:ARRAY_OF INTEGER[];
+  i,j: INTEGER;
+  sum : INTEGER ;
+
+BEGIN
+     sum:=0;
+     FOR i FROM 0 TO arr1.length DO
+      FOR j FROM 0 TO arr2.length DO
+       IF (arr1[i] <> arr2[j]) DO
+        sum:=sum+i+j;
+       END_IF
+      END_FOR
+     END_FOR
+     write("the sum is :" sum);
+END
+      
+        
+
+
+     
